@@ -162,7 +162,7 @@ table {
 @media (max-width: 999px) {
   .hero {
     background-image: none !important;
-    min-height: 70vh;
+    min-height: 75vh;
   }
 }
 @media (min-width: 1000px) {
@@ -338,7 +338,7 @@ body,
 }
 @media (max-width: 1399px) {
   #header {
-    height: 200px;
+    height: 230px;
   }
 }
 .header {
