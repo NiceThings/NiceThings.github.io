@@ -162,6 +162,7 @@ table {
 @media (max-width: 999px) {
   .hero {
     background-image: none !important;
+    min-height: 70vh;
   }
 }
 @media (min-width: 1000px) {
@@ -183,9 +184,6 @@ table {
     background-repeat: no-repeat;
     background-position: calc(10vw + 520px) center;
   }
-}
-.hero__text {
-  padding-top: 200px;
 }
 @media (min-width: 1000px) {
   .hero__text {
@@ -337,6 +335,11 @@ body,
 }
 #header {
   height: 100px;
+}
+@media (max-width: 1399px) {
+  #header {
+    height: 200px;
+  }
 }
 .header {
   margin-right: 5%;
