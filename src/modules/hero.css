@@ -1,0 +1,109 @@
+.hero {
+  padding-right: 5%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+@media (max-width: 999px) {
+  .hero {
+    background-image: none !important;
+  }
+}
+@media (min-width: 1000px) {
+  .hero {
+    background-image: url('images/phone--day.png');
+    background-size: 740px 600px;
+    background-repeat: no-repeat;
+    background-position: calc(10vw + 400px) center;
+  }
+}
+
+.hero__text {
+  padding-top: 200px;
+}
+@media (min-width: 1000px) {
+  .hero__text {
+    width: 33vw;
+    max-width: 400px;
+  }
+}
+
+.toggles {
+  position: absolute;
+}
+@media (max-width: 1399px) {
+  .toggles {
+    bottom: 100px;
+    width: 90%;
+    text-align: center;
+  }
+}
+@media (min-width: 1400px) {
+  .toggles {
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.toggle {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+@media (max-width: 1399px) {
+  .toggle {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+}
+@media (min-width: 1400px) {
+  .toggle {
+    float: left;
+    clear: left;
+  }
+}
+
+.toggle svg {
+  height: 40px;
+  width: 40px;
+  fill: var(--secondary);
+}
+
+.hero__download {
+  margin-top: 100px;
+  margin-bottom: 200px;
+  display: inline-block;
+}
+
+.hero__down {
+  position: absolute;
+  top: 1390px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 6s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 33%, 45%, 100% {
+    bottom: 28px;
+  }
+  28% {
+    bottom: 36px;
+  }
+  42% {
+    bottom: 35px;
+  }
+}
+
+.hero__down svg {
+  height: 25px;
+  width: 66px;
+  fill: var(--secondary);
+}
